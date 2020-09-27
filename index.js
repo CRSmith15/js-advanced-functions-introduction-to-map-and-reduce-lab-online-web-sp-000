@@ -10,3 +10,7 @@ function mapToNoChange(sourceArray) {
 function mapToDouble(sourceArray) {
   return sourceArray.map(x => x*2)
 }
+
+function mapToSquare(sourceArray) {
+  return sourceArray.map(x => x**2)
+}
