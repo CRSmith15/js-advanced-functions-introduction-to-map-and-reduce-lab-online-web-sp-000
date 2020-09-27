@@ -14,3 +14,9 @@ function mapToDouble(sourceArray) {
 function mapToSquare(sourceArray) {
   return sourceArray.map(x => x**2)
 }
+
+function reduceToTotal(sourceArray, startingPoint = 0) {
+  const reducer = function(accumulator, currentValue) => accumulator + currentValue;
+
+  return sourceArray.reduce(reducer, startingPoint)
+}
